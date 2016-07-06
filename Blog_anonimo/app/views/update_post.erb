@@ -1,0 +1,22 @@
+<h3>Busca el post que quieres editar mediante titulo:</h3>
+
+<p style="color: red"><%= @mensaje %></p>
+<form action="/edita_posts" method="post">
+<input type="text" name="title_text">
+<br>
+<br>
+<p>Dame el nuevo valor del titulo</p>
+<input type="text" name="new_title_text">
+<br>
+<br>
+<p>Dame el nuevo valor del cuerpo</p>
+<textarea name="new_body_text" cols="40" rows="5"></textarea>
+<br>
+<br>
+<p></p>
+<input type="submit" name="boton_title" value="Editar!!">
+</form>
+<br>
+<form action="/" method="get">
+<input type="submit" name="boton_salir" value="Salir!!">
+</form>

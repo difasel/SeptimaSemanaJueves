@@ -1,0 +1,13 @@
+<h3>Busca el post que requieres mediante titulo:</h3>
+
+<p style="color: red"><%= @mensaje %></p>
+<form action="/busca_posts" method="post">
+<input type="text" name="title_text">
+<br>
+<br>
+<input type="submit" name="boton_title" value="Find!!">
+</form>
+<br>
+<form action="/" method="get">
+<input type="submit" name="boton_salir" value="Salir!!">
+</form>

@@ -1,0 +1,32 @@
+  <h1>Bienvenido a Tu Blog personal!</h1>
+  <p>Elige que es lo que quieres hacer</p>
+
+  <form action="/post_temp" method='get'> 
+    <p>Generar un nuevo post: </p>
+    <input type="submit" name="boton_post" value="Postea">
+  </form>
+  <br>
+  <form action="/muestra_tags" method='post'> 
+    <p>Mostar todos los tags: </p>
+    <input type="submit" name="boton_tag" value="New Tag">
+  </form>
+  <br>
+  <form action="/muestra_posts" method='post'> 
+    <p>Muestra todos los posts: </p>
+    <input type="submit" name="boton_muestra" value="Show Posts">
+  </form>
+  <br>
+  <form action="/find_temp" method='get'> 
+    <p>Busca el posts por titulo: </p>
+    <input type="submit" name="boton_busca" value="Find Posts">
+  </form>
+  <br>
+  <form action="/edita_temp" method='get'> 
+    <p>Edita un post: </p>
+    <input type="submit" name="boton_edita" value="Edit Posts">
+  </form>
+  <br>
+  <form action="/elimina_temp" method='get'> 
+    <p>Elimina algun posts: </p>
+    <input type="submit" name="boton_elimina" value="Delete Posts">
+  </form>

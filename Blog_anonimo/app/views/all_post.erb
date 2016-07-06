@@ -1,0 +1,17 @@
+<h3>Estos son los posts:</h3>
+
+<% @posts.each do |post| %>
+<p>---------------------------------</p>
+<%= post.title %>
+<br>
+<%= post.body %>
+<br>
+  <% post.tags.each do |tags_val| %>
+  #<%= tags_val.tag %>
+  <%end%>
+<%end%>
+<p>---------------------------------</p>
+
+<form action="/" method="get">
+  <input type="submit" name="manda_index" value="Salir!">
+</form>

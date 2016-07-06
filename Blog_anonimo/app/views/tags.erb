@@ -1,0 +1,13 @@
+<h3>Estos son los tags registrados:</h3>
+
+<% @tags_array.each do |tag_value| %>
+<p>---------------------------------</p>
+<%= tag_value.tag %>
+<br>
+
+<%end%>
+<p>---------------------------------</p>
+
+<form action="/" method="get">
+  <input type="submit" name="manda_index" value="Salir!">
+</form>
